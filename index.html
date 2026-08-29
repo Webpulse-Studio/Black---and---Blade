@@ -306,7 +306,17 @@
       font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-    }
+    }.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
 
     /* REVIEWS */
 
@@ -609,16 +619,29 @@
         <h2>Galería</h2>
       </div>
 
-      <div class="gallery-grid">
+     <div class="gallery-item">
+  <img src="images/barbershop.jpg" alt="Interior de barbería">
+</div>
 
-        <div class="gallery-item">Foto 01</div>
-        <div class="gallery-item">Foto 02</div>
-        <div class="gallery-item">Foto 03</div>
-        <div class="gallery-item">Foto 04</div>
-        <div class="gallery-item">Foto 05</div>
-        <div class="gallery-item">Foto 06</div>
+<div class="gallery-item">
+  <img src="images/haircut.jpg" alt="Corte de pelo">
+</div>
 
-      </div>
+<div class="gallery-item">
+  <img src="images/fade.jpg" alt="Corte fade">
+</div>
+
+<div class="gallery-item">
+  <img src="images/beard.jpg" alt="Arreglo de barba">
+</div>
+
+<div class="gallery-item">
+  <img src="images/tools.jpg" alt="Herramientas de barbería">
+</div>
+
+<div class="gallery-item">
+  <img src="images/interior.jpg" alt="Interior de BLACK & BLADE">
+</div>
 
     </div>
 
